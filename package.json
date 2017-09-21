@@ -27,9 +27,6 @@
   ],
   "author": "jungwoo <firmware@tixit.kr>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mondora/asteroid/issues"
-  },
   "homepage": "https://github.com/tixitJungwoo/mondoraAsteroid",
   "devDependencies": {
     "babel-cli": "^6.16.0",
