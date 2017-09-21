@@ -28,3 +28,4 @@ build/Release
 
 .idea
 /lib/
+/node_modules/
