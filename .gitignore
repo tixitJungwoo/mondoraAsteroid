@@ -27,5 +27,4 @@ build/Release
 #node_modules
 
 .idea
-/lib/
 /node_modules/
