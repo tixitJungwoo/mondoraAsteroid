@@ -16,10 +16,6 @@
     "e2e-test": "env NODE_ENV=test env NODE_PATH=src _mocha --compilers js:babel-core/register --recursive test/e2e",
     "e2e-dev": "npm run e2e-test -- --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tixitJungwoo/mondoraAsteroid.git"
-  },
   "keywords": [
     "ddp",
     "asteroid",
