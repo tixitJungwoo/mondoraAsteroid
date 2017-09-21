@@ -4,6 +4,7 @@ import * as ddp from "./base-mixins/ddp";
 import * as login from "./base-mixins/login";
 import * as methods from "./base-mixins/methods";
 import * as loginWithPassword from "./base-mixins/password-login";
+import * as loginWithToken from "./base-mixins/token-login";
 import * as subscriptions from "./base-mixins/subscriptions";
 
 /*
@@ -25,7 +26,10 @@ import * as subscriptions from "./base-mixins/subscriptions";
 export function createClass(customMixins = []) {
 
     // Include base mixins before custom ones
-    const mixins = [ddp, methods, subscriptions, login, loginWithPassword]
+    // const mixins = [ddp, methods, subscriptions, login, loginWithPassword]
+    //     .concat(customMixins);
+
+    const mixins = [ddp, methods, subscriptions, loginWithToken]
         .concat(customMixins);
 
     const Asteroid = function Asteroid(/* arguments */) {

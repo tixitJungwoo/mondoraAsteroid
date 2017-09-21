@@ -8,17 +8,6 @@ import {onLogin} from "../common/login-method";
  *   Public methods
  */
 
-export function createUser({username, email, password}) {
-    const options = {
-        password,
-        user: {
-            username,
-            email
-        }
-    };
-    return this.call("createUser", options).then(onLogin.bind(this));
-}
-
 export function loginWithToken({uid, token}) {
     const auth = {
         uid,
