@@ -16,13 +16,21 @@
     "e2e-test": "env NODE_ENV=test env NODE_PATH=src _mocha --compilers js:babel-core/register --recursive test/e2e",
     "e2e-dev": "npm run e2e-test -- --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tixitJungwoo/mondoraAsteroid.git"
+  },
   "keywords": [
     "ddp",
     "asteroid",
     "meteor"
   ],
-  "author": " ",
+  "author": "jungwoo <firmware@tixit.kr>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mondora/asteroid/issues"
+  },
+  "homepage": "https://github.com/tixitJungwoo/mondoraAsteroid",
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
