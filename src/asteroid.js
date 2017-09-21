@@ -1,4 +1,4 @@
-import assign from "lodash.assign";
+var assign = require("lodash.assign");
 import EventEmitter from "wolfy87-eventemitter";
 import * as ddp from "./base-mixins/ddp";
 import * as login from "./base-mixins/login";
@@ -34,13 +34,17 @@ export function createClass(customMixins = []) {
 
     const Asteroid = function Asteroid(/* arguments */) {
         // Call each init method
-        mixins.forEach(({init}) => init && init.apply(this, arguments));
+        mixins.forEach(({init}) =>init && init.apply(this, arguments)
+        )
+        ;
     };
 
     Asteroid.prototype = Object.create(EventEmitter.prototype);
     Asteroid.prototype.constructor = Asteroid;
     // Merge all mixins into Asteroid.prototype
-    assign(Asteroid.prototype, ...mixins);
+    assign(Asteroid.prototype,...mixins
+)
+    ;
     // And delete the "dangling" init property
     delete Asteroid.prototype.init;
 
