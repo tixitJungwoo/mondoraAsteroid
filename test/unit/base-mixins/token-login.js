@@ -3,7 +3,7 @@ import chaiAsPromised from "chai-as-promised";
 import sinon from "sinon";
 import sinonChai from "sinon-chai";
 
-import passwordLogin, {createUser, loginWithPassword} from "base-mixins/password-login";
+import passwordLogin, {createUser, loginWithPassword} from "base-mixins/token-login";
 
 chai.use(chaiAsPromised);
 chai.use(sinonChai);
