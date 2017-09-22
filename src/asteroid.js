@@ -29,7 +29,7 @@ export function createClass(customMixins = []) {
     // const mixins = [ddp, methods, subscriptions, login, loginWithPassword]
     //     .concat(customMixins);
 
-    const mixins = [ddp, methods, subscriptions, loginWithToken]
+    const mixins = [ddp, methods, subscriptions, login, loginWithToken]
         .concat(customMixins);
 
     const Asteroid = function Asteroid(/* arguments */) {
